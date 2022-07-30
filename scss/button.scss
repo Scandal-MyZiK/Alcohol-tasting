@@ -1,0 +1,17 @@
+.button{
+    background-color: $neutral-sun;
+    padding: 15px 30px;
+    color: $white;
+    transition: 0.3s;
+    &:hover{
+        background-color: $neutral-sun-hover;
+    }
+    &__text{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 125%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+}

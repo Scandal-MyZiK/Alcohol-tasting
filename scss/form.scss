@@ -1,0 +1,177 @@
+.form {
+    background-color: $neutral-dark;
+    &__inner {
+        padding: 106px 286px 80px;
+        border: 3px solid $border-gray;
+        position: relative;
+        @media (max-width: 1200px) {
+            padding: 106px 200px 80px;
+        }
+        @media (max-width: 950px) {
+            padding: 106px 100px 80px;
+        }
+        @media (max-width: 630px) {
+            padding: 106px 50px 80px;
+        }
+        @media (max-width: 400px) {
+            padding: 106px 15px 80px;
+        }
+    }
+    &__top {
+        margin-bottom: 80px;
+        @media (max-width: 400px) {
+            margin-bottom: 60px;
+        }
+    }
+    &__text {
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 118px;
+            height: 1px;
+            background-color: $white;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -40px;
+        }
+    }
+    &__grape {
+        max-width: 260px;
+        position: absolute;
+        left: -49px;
+        top: -72px;
+        @media (max-width: 950px) {
+            width: 176px;
+            left: -44px;
+        }
+        @media (max-width: 760px) {
+            left: -34px;
+        }
+        @media (max-width: 630px) {
+            width: 120px;
+            left: -30px;
+        }
+        @media (max-width: 600px) {
+            width: 74px;
+            left: -12px;
+            top: -80px;
+        }
+    }
+    &__title {
+        position: absolute;
+        max-width: 490px;
+        background-color: $neutral-dark;
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: -28px;
+        font-family: 'PlayfairDisplay', sans-serif;
+        padding: 10px 50px;
+        text-align: center;
+        font-size: 36px;
+        @media (max-width: 950px) {
+            width: 270px;
+            line-height: 36px;
+            top: -52px;
+        }
+        @media (max-width: 600px) {
+            width: 90%;
+            padding: 0;
+            font-size: 30px;
+            top: -20px;
+        }
+    }
+    &__barrel {
+        max-width: 260px;
+        position: absolute;
+        top: -60px;
+        right: -52px;
+        @media (max-width: 970px) {
+            width: 176px;
+            right: -38px;
+        }
+        @media (max-width: 692px) {
+            right: -24px;
+            top: -44px;
+        }
+        @media (max-width: 630px) {
+            width: 120px;
+            right: -30px;
+            top: -52px;
+        }
+        @media (max-width: 600px) {
+            width: 59px;
+            right: -12px;
+            top: -66px;
+        }
+    }
+    &__shape {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 40px;
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__input {
+        width: 236px;
+        color: $white;
+        background-color: $neutral-dark;
+        border: none;
+        outline: 0;
+        outline-offset: 0;
+        border-bottom: 1px solid $white;
+        padding-bottom: 10px;
+        transition: 0.3s;
+        &--big {
+            width: 100%;
+        }
+        &::placeholder {
+            color: $white;
+        }
+        &:hover, &:focus {
+            &::placeholder {
+                color: $secondary;
+            }
+            border-bottom: 1px solid $secondary;
+        }
+        @media (max-width: 997px) {
+            width: 100%;
+        }
+    }
+    &__btn {
+        background-color: $neutral-dark;
+        color: $white;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        border: 1px solid $white;
+        padding: 15px 0;
+        transition: 0.3s;
+        &:hover {
+            color: $neutral-dark;
+            background-color: $white;
+        }
+    }
+}
+
+.form-container {
+    padding: 130px 0 100px;
+    @media (max-width: 700px) {
+        padding: 90px 0 50px;
+    }
+}

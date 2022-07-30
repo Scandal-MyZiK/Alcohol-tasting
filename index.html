@@ -1,17 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__top">
+                        <div class="header__info">
+                            <address class="header__address">Новокузнечный переулок 4/1</address>
+                            <a class="header__telephone" href="tel:88121234567"
+                                >8 (812) 123-45-67</a
+                            >
+                            <button class="menu-btn">
+                                <span></span>
+                            </button>
+                        </div>
+                        <nav class="header__menu header-menu">
+                            <ul class="header-menu__list">
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link"> Каталог </a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link"> Доставка </a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link"> Коллекции </a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link"> Контакты </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__bottom">
+                        <button class="button">
+                            <p class="button__text">винная карта</p>
+                        </button>
+                        <button class="button">
+                            <p class="button__text">дегустация</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="about">
+                <div class="container about-container">
+                    <div class="about__inner">
+                        <h2 class="about__title">Лучший вкус, это вкус долголетнего вина</h2>
+                        <p class="about__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim
+                            tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit
+                            sed fermentum. Felis adipiscing morbi sodales ac. Mauris dictumst risus
+                            pulvinar blandit elit. Vestibulum quam ultrices nascetur et viverra
+                            suscipit. Proin vitae aliquet leo aliquam amet rutrum. Lectus auctor
+                            purus ultrices enim ultrices. Augue fringilla tellus tortor orci
+                            ultrices sed. Viverra cras sapien, pellentesque viverra malesuada.
+                            Tellus dolor, eget vitae dignissim molestie eget sit duis. Vitae dui vel
+                            pretium euismod diam. Pellentesque amet, lacus, amet, quis risus.
+                            Pellentesque scelerisque nunc, orci aliquam quis.
+                        </p>
+                        <img src="./images/about-img.png" alt="#" class="about__img" />
+                    </div>
+                </div>
+            </section>
+            <section class="collection">
+                <div class="container collection-container">
+                    <div class="collection__inner">
+                        <div class="collection__info">
+                            <p class="collection__desc">Новинки коллекций</p>
+                            <h2 class="collection__title">Март 1980 Урожай Марселя</h2>
+                            <p class="collection__text collection-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+                                enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi
+                                sit non sit sed fermentum. Felis adipiscing morbi sodales ac.
+                            </p>
+                            <div class="collection__block">
+                                <div class="collection__stock collection-stock">
+                                    <div class="collection-stock__left">
+                                        <span class="collection-stock__year"> 1980 </span>
+                                    </div>
+                                    <div class="collection-stock__right">
+                                        <h3 class="collection-stock__title">
+                                            Colli Euganei Bianco Ca' Lustra 1980
+                                        </h3>
+                                        <p class="collection-stock__description">
+                                            Красочная бутылка вина из Марселя
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="collection__stock collection-stock collection-stock--center"
+                                >
+                                    <div class="collection-stock__left">
+                                        <span class="collection-stock__year"> 1980 </span>
+                                    </div>
+                                    <div class="collection-stock__right">
+                                        <h3 class="collection-stock__title">
+                                            Colli Euganei Bianco Ca' Lustra 1980
+                                        </h3>
+                                        <p class="collection-stock__description">
+                                            Красочная бутылка вина из Марселя
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="collection__stock collection-stock">
+                                    <div class="collection-stock__left">
+                                        <span class="collection-stock__year"> 1980 </span>
+                                    </div>
+                                    <div class="collection-stock__right">
+                                        <h3 class="collection-stock__title">
+                                            Colli Euganei Bianco Ca' Lustra 1980
+                                        </h3>
+                                        <p class="collection-stock__description">
+                                            Красочная бутылка вина из Марселя
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="collection__text collection-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+                                enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi
+                                sit non sit sed fermentum. Felis adipiscing morbi sodales ac.
+                            </p>
+                            <button class="button">
+                                <p class="button__text">узнать подробнее</p>
+                            </button>
+                        </div>
+                        <div class="collection__photo">
+                            <img
+                                class="collection__img-big"
+                                src="./images/collection-icon1big.jpg"
+                                alt=""
+                            />
+                            <img
+                                class="collection__img-left"
+                                src="./images/collection-icon2left.jpg"
+                                alt=""
+                            />
+                            <img
+                                class="collection__img-right"
+                                src="./images/collection-icon3right.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="form">
+                <div class="container form-container">
+                    <div class="form__inner">
+                        <div class="form__top">
+                            <img src="./images/form-grape.jpg" alt="" class="form__grape" />
+                            <h2 class="form__title">Запись на дегустацию</h2>
+                            <img src="./images/form-barrel.jpg" alt="" class="form__barrel" />
+                            <div class="form__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+                                enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi
+                                sit non sit sed fermentum.
+                            </div>
+                        </div>
+                        <form class="form__shape" action="#" method="get">
+                            <div class="form__info">
+                                <input class="form__input" name="s" placeholder="Имя" type="name" />
+                                <input
+                                    class="form__input"
+                                    name="s"
+                                    placeholder="Телефон"
+                                    type="tel"
+                                />
+                            </div>
+                            <input
+                                class="form__input form__input--big"
+                                name="s"
+                                placeholder="Бутик на Невском 103"
+                            />
+                            <button type="submit" class="form__btn">записаться</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__links"> Главная </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__links"> Каталог </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__links"> Поставщики </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__links"> Коллекции </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__links"> Дегустация </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__links"> Коллекция 2020 </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__links"> Контакты </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__bottom footer-bottom">
+                        <div class="footer-bottom__block">
+                            <p class="footer__store">винный бутик LE CORTE</p>
+                        </div>
+                        <div class="footer-bottom__block">
+                            <a class="footer__telephone" href="tel:88121234567">8 (812) 123-45-67</a>
+                        </div>
+                        <div class="footer-bottom__block">
+                            <ul class="footer__lists">
+                                <li class="footer__items">
+                                    <a href="#" class="footer__link">
+                                        <img
+                                            class="footer__youtube"
+                                            src="./images/footer-youtube.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </li>
+                                <li class="footer__items">
+                                    <a href="#" class="footer__link">
+                                        <img
+                                            class="footer__vk"
+                                            src="./images/footer-vk.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </li>
+                                <li class="footer__items">
+                                    <a href="#" class="footer__link">
+                                        <img
+                                            class="footer__facebook"
+                                            src="images/footer-facebook.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-bottom__block">
+                            <p class="footer__quote">© le-corte.ru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
 </html>
